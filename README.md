@@ -1,5 +1,9 @@
 # DeltaThemeExplore_a
 
+C:\me\ACTIVE\bsPUB\github.com\realB12\monster-gen\07_EXP\8_TEC\THEMES\Delta\a\DeltaThemeExplore_a\README.md
+
+[content/english/about.md](content/english/about)
+
 * **Owner**: rene.baron@baronsolutions.ch :: **Start**: 2021-08-21 :: **Status**: ongoing
 
 * **Credentials**: -> [_underscore file](../_DeltaThemeExplore.md) (outside this project)
@@ -11,37 +15,36 @@
 ## Abstract 
 `(for Decisions Makers)`
 
-### Purpose and Goals to be achieved by this project
+## Purpose and Goals to be achieved by this project
 
-Goal here is to **understand** 
+Goal of this Exploration project is to **understand** 
 
-* how the Theme is **setup** in general in terms of templates, archetypes, etc.
+a) how the Theme is **setup** in general in terms of templates, archetypes, etc.
 
-* its **components** like for instancen the Disquos component
+b) its **components** like for instancen the Disquos component
 
-* how this theme **integrates wie existing content files** (can we put on top, or do we have to copy/past content into the themes folder)
-
-* **hosting**: How to push this Example project on a Hosting Environment (Netlify, AWS)
+c) how this theme **integrates wie existing content files** (can we put on top, or do we have to copy/past content into the themes folder)
+d) **hosting**: How to push this Example project on a Hosting Environment (Netlify, AWS)
 
 ### Out of Scope
 
-### Issues
+## Issues
+The following Issues have been found: 
 
-### Sponsors
+### Hyperlinks
+#### Problem
+Hyperlink in the text such as [myfile](../myfile.md) do not work, because the Hugo compiler does not resolve them. This is a general issue that is not specific to the Theme but neither solved by it. #### Solution
+Pragmatically we can write the URL link as [myfile](../myfile/). 
+This solution works in the Website but breaks the MonsterGen experience for navigating in Markdown Docs. 
 
-### Roadmap
+
+
+## Roadmap
 See the open issues for a list of proposed features (and known issues).
 
-## Installation Guide 
-`(for Users)`
+## Installation
+-> Project Setup for Hugo, Theme, GitHub, Netlify and Forestry see this folder's [_underscore file](../_DeltaThemeExplore.md), 
 
-* Get a free API Key at https://example.com
-* Clone the repo
-* git clone https://github.com/your_username_/Project-Name.git
-* Install NPM packages
-* npm install
-* Enter your API in config.js
-* const API_KEY = 'ENTER YOUR API';
 
 ## Usage
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.

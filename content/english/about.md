@@ -4,6 +4,8 @@ description: "Get fastest loan with smart way a seating home"
 draft: false
 layout: "about"
 
+[contact.md](contact.md)
+
 # banner
 banner:
   subtitle: "We Are Delta"
