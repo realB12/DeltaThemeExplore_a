@@ -1,13 +1,27 @@
 # DeltaThemeExplore_a
 
-**Owner**: rene.baron@baronsolutions.ch :: **Start**: 2021-08-21 :: **Status**: ongoing
+* **Owner**: rene.baron@baronsolutions.ch :: **Start**: 2021-08-21 :: **Status**: ongoing
+
+* **Credentials**: -> [_underscore file](../_DeltaThemeExplore.md) (outside this project)
 
  ![](xPIC/DeltaHomepage.png)
+
+* [Official Documentation](documentation.html)
 
 ## Abstract 
 `(for Decisions Makers)`
 
 ### Purpose and Goals to be achieved by this project
+
+Goal here is to **understand** 
+
+* how the Theme is **setup** in general in terms of templates, archetypes, etc.
+
+* its **components** like for instancen the Disquos component
+
+* how this theme **integrates wie existing content files** (can we put on top, or do we have to copy/past content into the themes folder)
+
+* **hosting**: How to push this Example project on a Hosting Environment (Netlify, AWS)
 
 ### Out of Scope
 
