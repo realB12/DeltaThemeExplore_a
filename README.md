@@ -1,11 +1,8 @@
-# README.md Template
-
-# Project Name
+# DeltaThemeExplore_a
 
 **Owner**: rene.baron@baronsolutions.ch :: **Start**: 2021-08-21 :: **Status**: ongoing
 
-**Include screenshots**
-You can use Images to show your project, how it looks while running. 
+ ![](xPIC/DeltaHomepage.png)
 
 ## Abstract 
 `(for Decisions Makers)`
