@@ -3,7 +3,7 @@ title: Our Team
 description: Some of our Team members
 layout: team
 team_members:
-  subtitle: We Are Delta
+  subtitle: We Are Delta Plus
   title: Some of our Team members
   lists:
   - image: images/avatar/01.jpg
