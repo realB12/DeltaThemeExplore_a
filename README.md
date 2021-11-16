@@ -13,7 +13,7 @@ tags: ["aktiv", "***", "bré"]
 categories: ["Hugo", "Intern"]
 ---
 
-# DeltaThemeExplore_a
+# DeltaThemeExplore_a's README file
 `rene.baron@govy.swiss | bré | Nov 16, 2021 | draft work in progress v0.0.1 | updated Nov 16, 2021`
 
 ---
@@ -32,16 +32,10 @@ This document answers the following questions:
 
 * [MarkDownMonster Docs on "Configuring Site Relative Base Paths"](https://markdownmonster.west-wind.com/docs/_5fz0ozkln.htm)
 
-* [Lektion über die Verwendung von Relativen Hyperlinks](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML#Mit_protokoll-relativen_URIs_referenzieren)
+* [HTTP5: Lektion über die generelle Verwendung von Relativen Hyperlinks](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML#Mit_protokoll-relativen_URIs_referenzieren)
 </div>
 
 ---
-
-# DeltaThemeExplore_a
-
-C:\me\ACTIVE\bsPUB\github.com\realB12\monster-gen\07_EXP\8_TEC\THEMES\Delta\a\DeltaThemeExplore_a\README.md
-
-[content/english/about.md](content/english/about)
 
 * **Owner**: rene.baron@baronsolutions.ch :: **Start**: 2021-08-21 :: **Status**: ongoing
 
