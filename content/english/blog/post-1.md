@@ -1,13 +1,11 @@
 ---
-date: "2021-07-14"
-title: "Post Nr. 1"
-image: "images/blog/01.jpg"
-author: "rene.baron@baronsolutions.ch"
-draft: false
-previewWebRootPath: C:\me\ACTIVE\bsPUB\github.com\realB12\monster-gen\07_EXP\8_TEC\THEMES\Delta\a\DeltaThemeExplore_a\
+date: 2021-07-14
+title: Post Nr. 1
+image: images/blog/01.jpg
+author: rene.baron@baronsolutions.ch
+previewWebRootPath: ''
+
 ---
-
-
 # This is Post Number 1
 Some Hyperlinks on other pages: 
 
