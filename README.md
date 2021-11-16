@@ -1,3 +1,42 @@
+---
+locpath: C:\me\ACTIVE\bsPUB\github.com\realB12\monster-gen\07_EXP\8_TEC\THEMES\Delta\a\DeltaThemeExplore_a\README.md
+
+previewWebRootPath: C:\me\ACTIVE\bsPUB\github.com\realB12\monster-gen\07_EXP\8_TEC\THEMES\Delta\a\DeltaThemeExplore_a\
+
+author: rene.baron@baronsolutions.ch
+created: 16.11.2021 13:12:02
+version: draft v0.0.1
+draft: true
+private: false
+disqid: DiscussID
+tags: ["aktiv", "***", "bré"]
+categories: ["Hugo", "Intern"]
+---
+
+# DeltaThemeExplore_a
+`rene.baron@govy.swiss | bré | Nov 16, 2021 | draft work in progress v0.0.1 | updated Nov 16, 2021`
+
+---
+
+This document answers the following questions: 
+
+> **""**
+
+---
+
+<div style="background-color:#DFFF00; border-style:solid; border-color:#DFFF00; border-width:20px;">
+<span style="font-weight:bold">Links</span>
+
+* [HugoRelLinks.md](../../../../../../../../../../../REPO/work/TOOLS/H/HUGO/GUIDE/HugoRelLinks.md): Internal Research Paper about HUGO's Hyperlink Management
+
+
+* [MarkDownMonster Docs on "Configuring Site Relative Base Paths"](https://markdownmonster.west-wind.com/docs/_5fz0ozkln.htm)
+
+* [Lektion über die Verwendung von Relativen Hyperlinks](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML#Mit_protokoll-relativen_URIs_referenzieren)
+</div>
+
+---
+
 # DeltaThemeExplore_a
 
 C:\me\ACTIVE\bsPUB\github.com\realB12\monster-gen\07_EXP\8_TEC\THEMES\Delta\a\DeltaThemeExplore_a\README.md
@@ -15,27 +54,101 @@ C:\me\ACTIVE\bsPUB\github.com\realB12\monster-gen\07_EXP\8_TEC\THEMES\Delta\a\De
 ## Abstract 
 `(for Decisions Makers)`
 
-## Purpose and Goals to be achieved by this project
+## Purpose and Goals to be achieved by this Theme Exploration project
 
 Goal of this Exploration project is to **understand** 
 
 a) how the Theme is **setup** in general in terms of templates, archetypes, etc.
 
-b) its **components** like for instancen the Disquos component
+b) its **components** like for instancen the Disqus component
 
-c) how this theme **integrates wie existing content files** (can we put on top, or do we have to copy/past content into the themes folder)
+c) how this theme **integrates wie existing content files** (can we put on top, or do we have to copy/past content into the themes folder)  
+
 d) **hosting**: How to push this Example project on a Hosting Environment (Netlify, AWS)
+
+e) Testint the Hyperlink issues for referencing *.md files   
 
 ### Out of Scope
 
 ## Issues
 The following Issues have been found: 
 
-### Hyperlinks
-#### Problem
-Hyperlink in the text such as [myfile](../myfile.md) do not work, because the Hugo compiler does not resolve them. This is a general issue that is not specific to the Theme but neither solved by it. #### Solution
-Pragmatically we can write the URL link as [myfile](../myfile/). 
-This solution works in the Website but breaks the MonsterGen experience for navigating in Markdown Docs. 
+## Hyperlink Issue
+
+> The Power of the Internet is not its files, but how their contained information is (hyper)linked. 
+
+### The Problem
+Relative `[go to myfile](myfile.md)`-style hyperlinks, as we are using them in the MonsterGen editor, work fine in the MonterGen Preview as well as when being uploaded to GitHub and being clicked but normally fail for HUGO generated Websites, because the Hugo compiler does not resolve them by default, resp. does not convert the `*.md` filetype-extension into `*.html` to point to the tranformed HTML-page.  
+  
+However, this is a general issue that is not specific to this Delta Theme, but is neither solved by it. 
+
+Neither can the problem be solved within the Monster-Editor because Hyperlinks in Markdown have to be defined like this to keep navigation in the Monster-Preview an on GitHub working. 
+
+### Solution
+As descibed by the general [Research Document about Hugo Hyperlinks]() I will have to test so called **Hugo Link-RenderHooks** where we can manually program the way that hyperlinks in *.md files are translated under special conditions such as the Hyperlink being in a file, a header, footer, navigation elements or the href property of a picture. 
+
+## Testcases
+Sobald ein Hugo Projekt lokal läuft, mit einem GitHub-Repo synchronisiert und über Netlify- und AWS-Hosting funktioniert und in Forestry editiert werden kann sollen Test für alle [Navigationsarten](#navigationsarten) und alle möglichen Beriebsvarianten durchgeführt werden. 
+Bei den Beriebsvariante unterschieden wir 
+a) die Navigation auf der Basis der [nativen `*.md`-Dateien](#1-markdown-navigation) und 
+b) die Navigation in den [HUGO generierten `*.html`-Dateien](#2-html-navigation)
+
+### Test Data
+
+Have added cross-referencing Hyperlinks between  [content/english/blog/post-1.md](content/english/blog/post-1.md) and [content/english/blog/post-2.md](content/english/blog/post-2.md)
+as follows
+
+1. [post-2.md](post-2.md)
+2. [../post-2.md](../blog/post-2.md)
+3. [../../../README.md](../../../README.md)
+
+
+
+### 1. Markdown Navigation
+Hier geht es darum, dass mit den verwendeten Links im `[my Doc](../mydoc.md)` Format auch im nativen Markdown Format (ohne Hugo Generierung) mittels Mausklick vernünftig navigiert werden kann. 
+
+#### Test01: MarkdownMonsters Preview Navigation
+Navigating the *.md-links in MarkdownMonsters Preview: 
+
+#### Test02: GitHub Navigation
+Once the HugoPoject is uploaded to GitHub and opening those files in the GitHub Editor in View-Mode, link-click-naviating to other *.md linked Markdown-Files must be possible. 
+
+### 2. HTML-Navigation
+Hier geht es darum die Navigation für alle [Navigationsarten](#navigationsarten) für die mit Hugo generierten *.html-Dateien zu testen. 
+
+#### Test11: local InMemory Server
+When generating the HugoSite with the `hugo server`-command that does not generate the *.html files physically in the /public output folder, but keeps them in memory, all [types of web-navigation](#navigationsarten) must work. 
+
+#### Test12: local http Server  
+This about the hugo generated `/public`-folder running on a local http-server such as httpsrv
+
+#### Test13: Netlify  
+When the generated *.html files are published via Netlify
+
+#### Test14: Forestry  
+When the generated *.html files appear in the Forestry Editor's Website-Preview
+
+#### Test15: AWS  
+When the generated *.html files are published on an AWS Server
+
+
+## Navigationsarten
+In den zu generierenden Webseiten kommen Hyperlinks an verschiedenen Orten vor:
+
+1. Im Dokumenten-text
+2. Im Menu
+3. In Selektionsleisten (Treeview)
+4. Im Header
+5. Im Footer
+6. Im Logo
+7. in Bildern 
+8. in PopUps
+
+Eine funktionierende Lösung muss immer alle Arten abdecken!
+
+### Setup
+
+### OutOfTheBox Outcome
 
 
 
