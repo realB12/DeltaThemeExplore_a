@@ -13,6 +13,7 @@ previewWebRootPath: C:\me\ACTIVE\bsPUB\github.com\realB12\monster-gen\07_EXP\8_T
 Some Hyperlinks on other pages: 
 
 ### MarkDownMonster Previw Test (MMP)
+All Links must work in the MMs Preview panel
 1. [post-2.md](post-2.md)                   - works
 2. [./post-2.md](./post-2.md)               - works
 3. [../blog/post-2.md](../blog/post-2.md)   - works
@@ -20,6 +21,8 @@ Some Hyperlinks on other pages:
 5. [/README.md](/README.md)                 - works with previewWebRootPath set in Frontmatter 
 
 ### GitHub Test (GH)
+All Links must work when viewed on https://github.com/realB12/DeltaThemeExplore_a/blob/main/content/english/blog/post-1.md
+
 1. [post-2.md](post-2.md)                   - works
 2. [./post-2.md](./post-2.md)               - works
 3. [../blog/post-2.md](../blog/post-2.md)   - works
