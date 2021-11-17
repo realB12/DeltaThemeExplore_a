@@ -16,11 +16,6 @@ categories: ["Hugo", "Intern"]
 # DeltaThemeExplore_a's README file
 `rene.baron@govy.swiss | bré | Nov 16, 2021 | draft work in progress v0.0.1 | updated Nov 16, 2021`
 
----
-
-This document answers the following questions: 
-
-> **""**
 
 ---
 
@@ -45,8 +40,6 @@ This document answers the following questions:
 
 * [Official Documentation](documentation.html)
 
-## Abstract 
-`(for Decisions Makers)`
 
 ## Purpose and Goals to be achieved by this Theme Exploration project
 
@@ -61,6 +54,8 @@ c) how this theme **integrates wie existing content files** (can we put on top, 
 d) **hosting**: How to push this Example project on a Hosting Environment (Netlify, AWS)
 
 e) Testint the Hyperlink issues for referencing *.md files   
+
+Focus is on technology with a focus on architecture and ongoing operationabiltiy. 
 
 ### Out of Scope
 

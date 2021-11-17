@@ -1,3 +1,2 @@
 # The /public subfolder contains the hugo generated output that will 
 # change everytime when the "hugo" command is executed. 
-/public

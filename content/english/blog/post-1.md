@@ -61,10 +61,22 @@ All Links must work when viewed on https://suspicious-sinoussi-cb23ab.netlify.ap
 1. [post-2.md](post-2.md)                   - fails: goes to blog/post-1/post-2.md (not *.html)
 2. [./post-2.md](./post-2.md)               - fails: goes to blog/post-1/post-2.md 
 3. [../blog/post-2.md](../blog/post-2.md)   - fails: goes to blog/blog/post-1/post-2.md 
+4. [../../../README.md](../../../README.md) - positiv fail: 404 page not found
+5. [/README.md](/README.md)                 - positiv: 404 page not found
+
+**Issues**: Hyperlinks do not have a style
+
+### Forestry Website Test (FY)
+All Links must work when viewed on 
+
+1. [post-2.md](post-2.md)                   - fails: goes to blog/post-1/post-2.md (not *.html)
+2. [./post-2.md](./post-2.md)               - fails: goes to blog/post-1/post-2.md 
+3. [../blog/post-2.md](../blog/post-2.md)   - fails: goes to blog/blog/post-1/post-2.md 
 4. [../../../README.md](../../../README.md) - fails: README.md outside the page
 5. [/README.md](/README.md)                 - fails: README.md outside the page
 
 **Issues**: Hyperlinks do not have a style
+
 ---
 
 ## Results WITHOUT a layouts/_default/_markup/render-link.html
