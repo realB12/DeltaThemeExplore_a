@@ -1,6 +1,6 @@
 ######################## default configuration ####################
-baseURL = "http://demo.gethugothemes.com/delta/"
-title = "Delta - Software and SAAS landing Hugo Theme"
+baseURL = "https://delta-theme-explore-a.netlify.app/"
+title = "Delta-Theme Explore A"
 theme = "delta-hugo"
 # post pagination
 paginate = "6"

@@ -145,7 +145,7 @@ Eine funktionierende Lösung muss immer alle Arten abdecken!
 See the open issues for a list of proposed features (and known issues).
 
 ## Installation
--> Project Setup for Hugo, Theme, GitHub, Netlify and Forestry see this folder's [_underscore file](../_DeltaThemeExplore.md), 
+-> Project Setup for Hugo, Theme, GitHub, Netlify and Forestry see this folder's [_underscore file](../_DeltaThemeExplore_a.md)
 
 
 ## Usage
